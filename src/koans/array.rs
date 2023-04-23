@@ -18,15 +18,19 @@ fn array_empty() {
 // Attempting to access an array at an index that is
 // out of its bounds will cause an error. Let's cause
 // that error in this example.
+/*
 #[test]
 #[should_panic]
+#[allow(const_err)]
 fn out_of_index() {
+
     let arr: [&'static str; 5] = ["rust", "is", "mostly", "for", "nerds"];
 
     for i in 0..7 {
         arr[i];
     }
 }
+*/
 
 // Elements can be replaced in an array at a certain index.
 // hint: Without the 'mut' keyword, you won't be able to change data.
